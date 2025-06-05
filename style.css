@@ -448,7 +448,7 @@ html {
     top: 50%;
     transform: translateY(-50%);
     font-size: 2rem;
-    background:none;
+    background: none;
     color: #fff;
     padding: 0.5rem;
     cursor: pointer;
