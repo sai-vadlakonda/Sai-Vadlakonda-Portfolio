@@ -227,3 +227,28 @@ document.addEventListener("DOMContentLoaded", () => {
         isMenuOpen = false;
     }
 });
+
+const form = document.getElementById('contact-form');
+
+form.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    const formData = new FormData(form);
+
+    fetch('https://formsubmit.co/ajax/sai2592004@gmail.com', {
+        method: 'POST',
+        headers: { 'Accept': 'application/json' },
+        body: formData
+    })
+        .then(response => {
+            if (response.ok) {
+                window.location.href = "https://sai-vadlakonda.github.io/Sai-Vadlakonda-Portfolio/thankyou.html";
+            } else {
+                alert("Form submission failed. Please try again.");
+            }
+        })
+        .catch(error => {
+            alert("Error submitting form");
+            console.error(error);
+        });
+});
