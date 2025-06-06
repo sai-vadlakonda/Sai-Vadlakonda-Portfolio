@@ -1885,7 +1885,7 @@ html {
     background-color: whitesmoke;
     padding-top: 1rem;
     padding-bottom: 2.5rem;
-      padding-left: 0.5rem;
+    padding-left: 0.5rem;
     padding-right: 0.5rem;
 }
 
@@ -1899,20 +1899,28 @@ html {
 .features h5 {
     padding-top: 2rem;
     text-align: center;
-    justify-content: center;
     line-height: 1.5rem;
 }
 
 .features p {
     padding-top: 0.8rem;
     text-align: center;
-    justify-content: center;
     line-height: 1.5rem;
 }
 
 .code-para {
     padding-left: 2rem;
     padding-right: 2rem;
+}
+
+.profile-cards {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-left: 2.6rem;
 }
 
 .card2 {
@@ -1923,15 +1931,26 @@ html {
     background-color: white;
     border: 1px solid grey;
     border-radius: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.card2:hover {
+    transform: scale(1.0);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
 }
 
 .platform-logo {
     height: 50px;
-    margin-bottom: 15px;
+    margin-bottom: 0.6rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 0.6rem;
 }
 
 .platform-logo img {
@@ -1943,14 +1962,12 @@ html {
 .card2 h4 {
     font-size: medium;
     font-weight: 600;
-    text-align: center;
     line-height: 1rem;
 }
 
 .card2 p {
     line-height: 1rem;
     margin-bottom: 1rem;
-    text-align: center;
 }
 
 .profile-link {
@@ -1963,29 +1980,12 @@ html {
     transition: all 0.3s;
     font-size: 0.9rem;
     margin-top: 8px;
-    margin-left: 4.5rem;
 }
 
 .profile-link:hover {
     background: #2a8fd6;
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.card2:hover {
-    transform: scale(1.0);
-    transition: 0.3s;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
-}
-
-.profile-cards {
-    margin-top: 2rem;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    margin-left: 2.6rem;
 }
 
 @media(max-width:1146px) {
@@ -1999,11 +1999,6 @@ html {
     }
 }
 
-@media(max-width:350px) {
-    .profile-link {
-        margin-left: 2.9rem;
-    }
-}
 
 .projects {
     height: auto;
