@@ -1885,6 +1885,8 @@ html {
     background-color: whitesmoke;
     padding-top: 1rem;
     padding-bottom: 2.5rem;
+      padding-left: 0.5rem;
+    padding-right: 0.5rem;
 }
 
 .features h2 {
